@@ -5,83 +5,11 @@
 _Summary:_ This project is an introduction to artificial neural nets: fully-connected neural nets, hidden layers,
 activation functions, back-propagation, dropout.
 
-## Contents
-
-1. [Chapter I](#chapter-i) \
-   1.1. [Preamble](#preamble)
-2. [Chapter II](#chapter-ii) \
-   2.1. [Introduction](#introduction)
-3. [Chapter III](#chapter-iii) \
-   3.1. [Goals](#goals)
-4. [Chapter IV](#chapter-iv) \
-   4.1. [Instructions](#instructions)
-5. [Chapter V](#chapter-v) \
-   5.1. [Mandatory part](#mandatory-part)
-6. [Chapter VI](#chapter-vi) \
-   6.1. [Bonus part](#bonus-part)
-7. [Chapter VII](#chapter-vii) \
-   7.1. [Submission and peer-correction](#submission-and-peer-correction)
-
-## Chapter I
-
-### Preamble
-
-Do you know that your brain is a natural neural net? It consists of 90 billion neurons, on average, that are
-interconnected with each other creating 100-1,000 trillion synaptic connections. When one neuron is activated it
-transfers its signal or does the opposite – inhibits transferring the signal – to another neuron. In order to do this a
-combination of chemicals and electricity is used.
-
-Some research says that there is a hierarchy between neurons in our brain. Some of them are responsible for recognizing
-specific basic figures. If they “see” it, they transfer the signal to the next neuron in the hierarchy. This next neuron
-might be responsible for recognizing “A”. If it sees it, then it transfers the signal further to another neuron that
-might be responsible for “Apple”.
-
-This information was inspiring for people who were occupied in the artificial intelligence field and they decided to
-take some of the insights from human brains to create artificial neural networks.
-
-## Chapter II
-
-### Introduction
-
-Artificial neural networks are not that complex as natural ones. They are only inspired by brains. But still, they are a
-bit more complicated than classic machine learning algorithms.
-
-In general, nothing changes – it is a subset of machine learning algorithms. Thus, it requires data to make predictions.
-It can be used for classification and regression tasks if we talk about classic machine learning tasks.
-
-In this project, you will work only with fully-connected neural networks (FCNN). Those networks consist of neurons where
-each of them connected to all the other neurons in the previous and the next layer.
-
-![1](images/DS_Project_02_Churn_prediction_0.jpg)
-
-The first layer is called the “input layer”. Each of the neurons in this layer takes the value of a feature. For
-example, if you have 15 features in your dataset, you will have 15 neurons in the input layer.
-
-The next layers are called hidden layers. Each of them consists of neurons that make a non-linear transformation of the
-input they get. The input is the sum of the product of values and weights from the previous layer. For example, for the
-first neuron in the first hidden layer, you will need to multiply each feature value to a weight and then calculate the
-sum. The neuron from the hidden layer will pass that sum through an activation function, for example, a sigmoid (like in
-logistic regression) and return the value to the next layer. The neurons on the next layer will do the same thing.
-
-The last layer is the output layer. It actually predicts something. For example, if you have a classification task where
-you have 4 classes, you will have 3 (n-1) neurons in the output layer.
-
-In this example, you may think about the neural network as an ensemble full of logistic regressions. To train a FCNN
-means to find optimal values of weights that minimize the error.
-
-There is the forward propagation mechanism – when you make the calculations (multiplications of weights and values, and
-activation functions applications and making predictions). And there is the backward propagation mechanism – when you
-have the predictions, you calculate the error and then adjust the weights (for example, via stochastic gradient descent)
-from the last layers to the first. Going back and forth, you are training a neural network.
-
-## Chapter III
-
 ### Goals
 
 The goal of this project is to give you a first approach to neural networks. You will try to train a multilayer
 perceptron (FCNN) using several libraries as well as making the same network using NumPy.
 
-## Chapter IV
 
 ### Instructions
 
@@ -91,7 +19,6 @@ perceptron (FCNN) using several libraries as well as making the same network usi
   your source code.
 * Store the datasets in the subfolder data
 
-## Chapter V
 
 ### Mandatory part
 
@@ -268,14 +195,12 @@ with an automated checker.
 
 Your repository should contain one or several notebooks with your solutions as well as the prediction file.
 
-## Chapter VI
 
 ### Bonus part
 
 * Try to achieve a better AUC on the test dataset with a neural network solution – 0.83.
 * Try to achieve an even better AUC on the test dataset with a neural network solution – 0.85.
 
-## Chapter VII
 
 ### Submission and peer-connection
 
